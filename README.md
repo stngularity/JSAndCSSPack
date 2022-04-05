@@ -12,7 +12,7 @@
 <input type="checkbox" id="check3" class="toggle" disabled>
 <label for="check3">Выключеный переключатель</label>
 ```
-![Checkboxs](https://raw.githubusercontent.com/TheStngularity/JSAndCSSPack/main/images/image.png?token=GHSAT0AAAAAABOHQTVYI2ZMMHTW4QCX5RPKYSMR42Q)
+![Checkboxs](https://cdn.discordapp.com/attachments/834490254031192116/960980245345861672/image.png)
 ### Кнопки
 ```html
 <button class="btn">Обычная кнопка</button>
@@ -20,8 +20,45 @@
 <button class="btn success">Успешная(зелёная) кнопка</button>
 <button class="btn main">Главная кнопка</button>
 ```
-![Buttons](https://raw.githubusercontent.com/TheStngularity/JSAndCSSPack/main/images/image2.png?token=GHSAT0AAAAAABOHQTVYJDNKAA4CC5KWHWJAYSMSEVQ)
+![Buttons](https://cdn.discordapp.com/attachments/834490254031192116/960980244947427348/image2.png)
+### Инпуты
+```html
+<input type="text" class="input" placeholder="Текстовый инпут">
+<input type="file" class="input">
+<input type="text" class="input validation" required placeholder="Текстовое поле с валидатором">
+<select class="select">
+    <option value="1">Селект меню</option>
+</select>
+```
+![Inputs](https://cdn.discordapp.com/attachments/834490254031192116/960981220659982336/unknown.png)
+### Сообщения
+```html
+<script type="module">
+    import {createToast} from "../js/main.js"
 
+    document.getElementById("snow-toast").addEventListener("click", () => {
+        createToast({
+            position: "top-right", // top-left, top-center, top-right, bottom-left, bottom-center or bottom-right, default: top-left
+            text: "Hello", // Toast text value
+            autoClose: 2000, // Time before close toast, false - to not auto close, default: 1000
+            canClose: true, // Closible?, default: true
+            showProgress: true, // Snow progress?, default: true
+            pauseOnHover: false, // Pause on toast hover, default: false
+            pauseOnFocusLoss: false, // Pause focus loss, default: false,
+            onClose: () => {console.log("Hello")} // Run after toast close, default: () => {}
+        })
+    })
+</script>
+```
+![Toasts](https://cdn.discordapp.com/attachments/834490254031192116/960982129913774090/unknown.png)
+
+## Установка
+```bash
+$ 
+```
+
+## Примичания
+1. Чтобы изменить скроубар - нужно добавить html-тегу класс new-scrollbar
 ## Цели
 - [x] Сделать кастомный сайдбар
 - [ ] Сделать кнопки
