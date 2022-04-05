@@ -15,7 +15,12 @@
 ![Checkboxs](https://raw.githubusercontent.com/TheStngularity/JSAndCSSPack/main/images/image.png?token=GHSAT0AAAAAABOHQTVYI2ZMMHTW4QCX5RPKYSMR42Q)
 ### Кнопки
 ```html
+<button class="btn">Обычная кнопка</button>
+<button class="btn danger">Опасная(красная) кнопка</button>
+<button class="btn success">Успешная(зелёная) кнопка</button>
+<button class="btn main">Главная кнопка</button>
 ```
+![Buttons](https://raw.githubusercontent.com/TheStngularity/JSAndCSSPack/main/images/image2.png?token=GHSAT0AAAAAABOHQTVYJDNKAA4CC5KWHWJAYSMSEVQ)
 
 ## Цели
 - [x] Сделать кастомный сайдбар
