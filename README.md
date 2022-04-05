@@ -12,7 +12,10 @@
 <input type="checkbox" id="check3" class="toggle" disabled>
 <label for="check3">Выключеный переключатель</label>
 ```
-[!]
+![Checkboxs](https://raw.githubusercontent.com/TheStngularity/JSAndCSSPack/main/images/image.png?token=GHSAT0AAAAAABOHQTVYI2ZMMHTW4QCX5RPKYSMR42Q)
+### Кнопки
+```html
+```
 
 ## Цели
 - [x] Сделать кастомный сайдбар
