@@ -1,0 +1,31 @@
+@import url('link for font');
+
+
+:root {
+    --main-color: #hheexx;
+    --active-main-color: #hheexx;
+    --main-color-in-rgba: rgba;
+    --active-main-color-in-rgba: rgba;
+
+    --background-color: #hheexx;
+    --blocks-background: #hheexx;
+    --active-blocks-background: #hheexx;
+    --color: #hheexx;
+    --dark-color: #hheexx;
+
+    --toast-background: #hheexx;
+    --toast-default-progressbar-color: var(--main-color);
+
+    --font: font;
+    --font-regular-weight: 400;
+    --font-medium-weight: 500;
+    --font-semibold-weight: 600;
+
+    --scrollbar-color: #hheexx;
+
+    --toggle-not-checked-background: #hheexx;
+    --toggle-checked-background: #hheexx;
+    --toggle-disabled-background: #hheexx;
+    --toggle-disabled-color: #hheexx;
+    --toggle-disabled-text-color: #hheexx;
+}

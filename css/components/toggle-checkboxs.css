@@ -1,0 +1,53 @@
+/* not colored */
+input[type="checkbox"].toggle {
+    opacity: 0;
+    position: absolute;
+    left: -9000px;
+    top: -9000px;
+}
+  
+input[type="checkbox"].toggle + label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+  
+input[type="checkbox"].toggle + label::before {
+    content: "";
+    width: 45px;
+    height: 25px;
+    background-color: var(--blocks-background);
+    border-radius: 50px;
+    margin-right: 5px;
+    transition: background-color 200ms ease-in-out;
+}
+  
+input[type="checkbox"].toggle + label::after {
+    position: absolute;
+    content: "";
+    left: 2px;
+    width: 19px;
+    height: 19px;
+    background-color: var(--main-color);
+    border-radius: 50px;
+    transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
+}
+  
+input[type="checkbox"].toggle:checked + label::after {
+    content: "";
+    transform: translateX(100%);
+    left: 5px;
+    background-color: var(--main-color);
+}
+
+/* colored */
+input[type="checkbox"].toggle.colored + label::before {background-color: var(--toggle-not-checked-background);}
+input[type="checkbox"].toggle.colored + label::after {background-color: #e73131;}
+input[type="checkbox"].toggle.colored:checked + label::before {background-color: var(--toggle-checked-background);}
+input[type="checkbox"].toggle.colored:checked + label::after {background-color: #77e241;}
+
+/* disabled */
+input[type="checkbox"].toggle:disabled + label {color: var(--toggle-disabled-text-color);}
+input[type="checkbox"].toggle:disabled + label::before {background-color: var(--toggle-disabled-background);}
+input[type="checkbox"].toggle:disabled + label::after {background-color: var(--toggle-disabled-color);}

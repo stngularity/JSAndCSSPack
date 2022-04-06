@@ -1,0 +1,9 @@
+.new-scrollbar::-webkit-scrollbar {width: .6vw;}
+
+.new-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-color);
+    border-radius: 5px;
+}
+.new-scrollbar::-webkit-scrollbar-thumb:hover {background-color: var(--main-color);}
+
+.new-scrollbar::-webkit-scrollbar-track {background-color: var(--blocks-background);}
