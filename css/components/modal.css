@@ -1,0 +1,62 @@
+/* modal main content */
+.modal-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.25);
+    top: 0;
+    left: 0;
+}
+
+.modal {
+    position: fixed;
+    width: 400px;
+    max-height: max-content;
+    background-color: var(--blocks-background);
+    padding: 11px;
+    border-radius: 5px;
+    cursor: default;
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.modal-close {
+    position: absolute;
+    font-size: 20px;
+    right: 5px;
+    top: 0;
+    cursor: pointer;
+    transition: color .2s linear;
+}
+
+.modal-close:hover {
+    color: var(--dark-color);
+}
+
+.modal-title {
+    font-weight: var(--font-medium-weight);
+    font-size: 19px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--active-blocks-background);
+}
+
+.modal-content {padding-top: 8px;}
+
+.modal-content.with-buttons {
+    padding: 8px 0 8px 0;
+    border-bottom: 1px solid var(--active-blocks-background);
+}
+
+/* modal buttons */
+.modal-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 8px;
+    width: 100%;
+    padding-top: 8px;
+}

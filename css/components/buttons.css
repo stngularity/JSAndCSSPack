@@ -21,6 +21,9 @@
 
 .btn:hover {background-color: var(--active-blocks-background);}
 
+.modal-buttons > .btn {background-color: var(--modal-blocks-background);}
+.modal-buttons > .btn:hover {background-color: var(--modal-active-blocks-background);}
+
 /* main */
 .btn.main {
     background-color: var(--main-color);
