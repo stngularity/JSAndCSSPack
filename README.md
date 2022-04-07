@@ -1,6 +1,9 @@
 # JS&CSS Pack
 A set of styles and scripts for websites!
 
+## Links
+- **[Documentation](https://github.com/TheStngularity/JSAndCSSPack/wiki)**
+
 ## Installation
 1. Go to the tab "Releases"
 2. Download the latest stable version (or beta)
