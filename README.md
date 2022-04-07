@@ -29,5 +29,8 @@ A set of styles and scripts for websites!
 - [x] Modal
 - [ ] Headers
 - [ ] Footers
+- [ ] Sidebars
+- [ ] Theme Creater
+- [ ] Documentation Edition
 ---
 **SyrGroup & TheStnularity © 2021-2022 All rights reserved**
