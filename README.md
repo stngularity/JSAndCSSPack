@@ -3,6 +3,9 @@ A set of styles and scripts for websites!
 
 ## Links
 - **[Documentation](https://github.com/TheStngularity/JSAndCSSPack/wiki)**
+- **[Sources](https://github.com/TheStngularity/JSAndCSSPack/tree/main/)**
+- **[Releases](https://github.com/TheStngularity/JSAndCSSPack/releases)**
+- **[Latest Version](https://github.com/TheStngularity/JSAndCSSPack/releases/tag/v0.0.1b2)**
 
 ## Installation
 1. Go to the tab "Releases"
