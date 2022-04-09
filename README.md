@@ -17,20 +17,21 @@ A set of styles and scripts for websites!
    - Note, first import the theme, and then `css/main.css`
 
 ## Goals
-- [x] Make a custom scrollbar
-- [x] Make a buttons
-     * [x] Default, danger(red), success(green) and main buttons
-     * [x] Rounded button versions
-     * [x] Support for images in buttons
-     * [x] Buttons for "social networks" and important sites
-- [x] Toasts
-- [x] Switches
-- [x] Custom inputs (subject to change)
-- [x] Modal
-- [ ] Headers
-- [ ] Footers
-- [ ] Sidebars
-- [ ] Theme Creater
-- [ ] Documentation Edition
++ [ ] **v0.0.1**
+  - [x] Make a custom scrollbar
+  - [x] Make a buttons
+       * [x] Default, danger(red), success(green) and main buttons
+       * [x] Rounded button versions
+       * [x] Support for images in buttons
+       * [x] Buttons for "social networks" and important sites
+  - [x] Toasts
+  - [x] Switches
+  - [x] Custom inputs (subject to change)
+  - [x] Modal
+  - [ ] Headers
+  - [ ] Footers
+  - [ ] Sidebars
+  - [ ] Theme Creater
+  - [ ] Documentation Edition
 ---
 **SyrGroup & TheStnularity © 2021-2022 All rights reserved**
