@@ -1,5 +1,7 @@
 /* default */
-input.input {
+input.input,
+select.select,
+textarea.input {
     padding: 7px 7px 5px 7px;
     background-color: var(--blocks-background);
     color: var(--color);
@@ -15,12 +17,18 @@ input.input {
 }
 
 input.input:hover,
-input.input:focus {
+input.input:focus,
+select.select:hover,
+select.select:focus,
+textarea.input:hover,
+textarea.input:focus {
     border-bottom: 2px solid var(--main-color);
     box-shadow: 0 0 5px var(--blocks-background);
 }
 
-input.input::placeholder {color: var(--dark-color);}
+input.input::placeholder,
+select.select::placeholder,
+textarea.input::placeholder {color: var(--dark-color);}
 
 /* file */
 input[type="file"]::-webkit-file-upload-button {
@@ -55,26 +63,21 @@ input[type="color"].input::-webkit-color-swatch {border: 1px solid var(--backgro
 input.input.validation:focus:valid {box-shadow: 0 0 5px rgba(0, 255, 0, 0.50);}
 input.input.validation:focus:invalid {box-shadow: 0 0 5px rgba(255, 0, 0, 0.50);}
 
-/* select */
-select.select {
-    padding: 7px 7px 5px 7px;
-    background-color: var(--blocks-background);
-    color: var(--color);
-    font-family: var(--font);
-    font-weight: var(--font-regular-weight);
-    border: none;
-    border-radius: 3px;
-    border-bottom: 2px solid var(--blocks-background);
-    outline: none;
-    width: 314px;
-    transition: border-bottom .2s linear,
-                box-shandow .2s linear;
+/* textarea */
+textarea.input {
+    resize: none;
 }
-select.select:hover,
-select.select:focus {
-    border-bottom: 2px solid var(--main-color);
-    box-shadow: 0 0 5px var(--blocks-background);
+textarea.input::after {
+    content: attr(maxlength);
+}
+
+/* select */
+select.select optgroup {
+    font-weight: var(--font-semibold-weight);
+    font-size: 12px;
+    color: var(--semi-dark-color);
 }
 
 select.select::-ms-expand {display: none;}
-select.select option {background-color: var(--blocks-background);}
+select.select option {background-color: var(--blocks-background); color: var(--color); font-size: 14px;}
+select.select option:checked {border-left: 2px solid var(--main-color);}

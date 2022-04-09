@@ -2,7 +2,8 @@ const DEFAULT_OPTIONS = {
     onClose: () => {},
     buttons: [],
     title: "",
-    content: ""
+    content: "",
+    animation: "top-center"
 }
 
 const DEFAULT_BTN_OPTIONS = {
@@ -21,20 +22,24 @@ class Modal {
     #options
 
     constructor(options) {
+        this.#options = {...DEFAULT_OPTIONS, ...options}
+
         const modalContainer = document.createElement("div")
         modalContainer.classList.add("modal-container")
 
         this.#modal = document.createElement("div")
         this.#modal.classList.add("modal")
+        this.#modal.dataset.animation = this.#options.animation
         const close = document.createElement("div")
         close.classList.add("modal-close")
         close.textContent = "×"
         this.#modal.append(close)
         modalContainer.append(this.#modal)
 
+        requestAnimationFrame(() => {this.#modal.classList.add("show")})
+
         close.addEventListener("click", () => {this.close()})
 
-        this.#options = {...DEFAULT_OPTIONS, ...options}
         this.update(this.#options)
         document.body.append(modalContainer)
     }
@@ -50,7 +55,7 @@ class Modal {
         const content = document.createElement("div")
         content.classList.add("modal-content")
         if (typeof this.#options["buttons"] !== "undefined" && this.#options["buttons"] !== []) content.classList.add("with-buttons")
-        content.textContent = value
+        content.innerHTML = value
         this.#modal.append(content)
     }
     
@@ -77,11 +82,11 @@ class Modal {
     }
 
     close() {
-        const container = this.#modal.parentElement
+        const modalContainer = this.#modal.parentElement
         this.#modal.classList.remove("show")
         this.#modal.addEventListener("transitionend", () => {
             this.#modal.remove()
-            container.remove()
+            modalContainer.remove()
         })
         this.#options['onClose']()
     }

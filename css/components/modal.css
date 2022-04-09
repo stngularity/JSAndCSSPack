@@ -22,7 +22,16 @@
     bottom: 0;
     left: 0;
     margin: auto;
+    transition: transform .25s linear,
+                opacity .25s linear;
 }
+
+.modal[data-animation="top-center"] {transform: translateY(-100vh);}
+.modal[data-animation="bottom-center"] {transform: translateY(100vh);}
+.modal[data-animation="left-center"] {transform: translateX(-110%);}
+.modal[data-animation="right-center"] {transform: translateX(110%);}
+.modal[data-animation="opacity"] {opacity: 0;}
+.modal.show {transform: translate(0, 0); opacity: 1;}
 
 .modal-close {
     position: absolute;
