@@ -18,11 +18,11 @@ A set of styles and scripts for websites!
 
 ## Goals
 - [x] Make a custom scrollbar
-- [ ] Make a buttons
+- [x] Make a buttons
      * [x] Default, danger(red), success(green) and main buttons
      * [x] Rounded button versions
      * [x] Support for images in buttons
-     * [ ] Buttons for "social networks" and important sites
+     * [x] Buttons for "social networks" and important sites
 - [x] Toasts
 - [x] Switches
 - [x] Custom inputs (subject to change)
