@@ -34,7 +34,8 @@ A set of styles and scripts for websites!
   - [ ] Theme Creater
   - [ ] Documentation Edition
   - [ ] Additionally
-       * [x] Multi-stage form
+       * [ ] Multi-stage form
+       * [ ] Tooltips
        * ... and more(I have no ideas) 
 ---
 **SyrGroup & TheStnularity © 2021-2022 All rights reserved**
