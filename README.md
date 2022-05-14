@@ -30,7 +30,11 @@ A set of styles and scripts for websites!
   - [x] Modal
   - [ ] Headers
   - [ ] Footers
+  - [ ] Sidebars
   - [ ] Theme Creater
   - [ ] Documentation Edition
+  - [ ] Additionally
+       * [x] Multi-stage form
+       * ... and more(I have no ideas) 
 ---
 **SyrGroup & TheStnularity © 2021-2022 All rights reserved**
