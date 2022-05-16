@@ -28,6 +28,7 @@ A set of styles and scripts for websites!
   - [x] Switches
   - [x] Custom inputs (subject to change)
   - [x] Modal
+  - [ ] Alerts
   - [ ] Headers
   - [ ] Footers
   - [ ] Sidebars
