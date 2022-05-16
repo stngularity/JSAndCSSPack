@@ -37,6 +37,7 @@ A set of styles and scripts for websites!
   - [ ] Additionally
        * [ ] Multi-stage form
        * [ ] Tooltips
+       * [ ] Charts
        * ... and more(I have no ideas) 
 ---
 **SyrGroup & TheStnularity © 2021-2022 All rights reserved**
