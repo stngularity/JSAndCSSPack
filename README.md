@@ -35,7 +35,7 @@ A set of styles and scripts for websites!
   - [ ] Theme Creater
   - [ ] Documentation Edition
   - [ ] Additionally
-       * [x] Multi-stage form
+       * [x] Multistage form
        * [x] Tooltips
        * [ ] Charts
        * [x] Table
